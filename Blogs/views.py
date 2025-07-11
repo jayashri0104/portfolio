@@ -1,5 +1,5 @@
 from django.shortcuts import render,HttpResponse
-from .models import Blog
+from .models import Category
 
 
 def index(request):
@@ -7,7 +7,7 @@ def index(request):
 
      return render(
         request,
-        template_name="website/index.html"
+        template_name="Blogs/index.html"
     
      )
    
